@@ -29,9 +29,7 @@ object pepita {
 		energia = energia + comida.energiaQueOtorga()
 		game.removeVisual(comida)
 	}
-	method interactuar(algo){
-		algo == 
-	}
+
 
 	method vola(kms) {
 		energia = energia - kms * 9
