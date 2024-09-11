@@ -5,14 +5,12 @@ import extras.*
 
 describe "Tests de Pepita" {
 
-	method initialize() {
-		game.clear()
-	}
 
-//	test "Al comer pepita aumenta su energia" {
-//		pepita.come(manzana)
-//		assert.equals(140, pepita.energia())
-//	}
+
+	test "Al comer pepita aumenta su energia" {
+		pepita.come(manzana)
+		assert.equals(140, pepita.energia())
+	}
 
 	test "Al volar pepita pierde energia" {
 		pepita.vola(1)
@@ -25,6 +23,7 @@ describe "Tests de Pepita" {
 	}
 
 	test "Al moverse pepita pierde energia por el trayecto" {
+		pepita.position(game.origin())
 		pepita.irA(game.at(1, 0))
 		assert.equals(91, pepita.energia())
 	}

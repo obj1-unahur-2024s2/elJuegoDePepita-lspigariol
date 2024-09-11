@@ -2,7 +2,7 @@ import wollok.game.*
 
 object manzana {
 
-	//Completar
+	method energiaQueOtorga() = 40
 
 }
 

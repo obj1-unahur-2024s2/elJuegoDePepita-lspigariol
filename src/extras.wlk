@@ -3,12 +3,14 @@ import wollok.game.*
 
 object nido {
 
-	// Completar
+	method position() = game.center()
+	method image() = "nido.png"
 }
 
 object silvestre {
 
-	// Completar
+	method position() = game.at(pepita.position().x().max(3),0)
+	method image() = "silvestre.png"
 
 }
 
