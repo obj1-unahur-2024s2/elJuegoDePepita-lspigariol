@@ -11,7 +11,7 @@ program PepitaGame {
 	game.boardGround("fondo.jpg")
 //	game.cellSize(80)
 
-	tutorial1.iniciar()
+	tutorial2.iniciar()
 
 	//game.showAttributes(pepita) //Debug
 

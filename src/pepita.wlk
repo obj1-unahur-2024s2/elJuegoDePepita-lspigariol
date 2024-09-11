@@ -27,6 +27,10 @@ object pepita {
 
 	method come(comida) {
 		energia = energia + comida.energiaQueOtorga()
+		game.removeVisual(comida)
+	}
+	method interactuar(algo){
+		algo == 
 	}
 
 	method vola(kms) {
@@ -47,6 +51,10 @@ object pepita {
 	method estaEnElNido() {
 		
 		return position == nido.position()
+	}
+	method comeLoQueHayaSiEsQueHayAlgo() {
+		if(not game.colliders(self).isEmpty())
+			game.uniqueCollider(self).interactuar(pepita)
 	}
 
 }

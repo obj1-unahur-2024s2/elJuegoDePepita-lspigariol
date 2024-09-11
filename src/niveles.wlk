@@ -20,7 +20,7 @@ object tutorial2 {
 		game.addVisual(alpiste)
 		game.addVisual(nido)
 		game.addVisual(silvestre)
-		game.addVisual(pepita)
+		game.addVisualCharacter(pepita)
 		config.configurarTeclas()
 	}
 
@@ -43,9 +43,9 @@ object tutorial3 {
 object config {
 
 	method configurarTeclas() {
-		keyboard.left().onPressDo({ pepita.irA(pepita.position().left(1))})
-		keyboard.right().onPressDo({ pepita.irA(pepita.position().right(1))})
 		// Completar para que se pueda mover arriba y abajo
+		keyboard.c().onPressDo( {pepita.comeLoQueHayaSiEsQueHayAlgo()}  )
+
 	}
 
 	method configurarColisiones() {
@@ -53,4 +53,5 @@ object config {
 	}
 
 }
+
 
